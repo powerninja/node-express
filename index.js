@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', function (req, res) {
-  res.send('<h1>こんにちはの見出し</h1>');
+  res.send({ name: '平岡', age: '45' });
 });
 
 app.listen(5050, function () {
