@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 
 app.get('/', function (req, res) {
-  res.send('こんにちは');
+  res.send('<h1>こんにちはの見出し</h1>');
 });
 
 app.listen(5050, function () {
-  console.log('listeing on localhost port 5000');
+  console.log('listening on localhost port 5050');
 });
