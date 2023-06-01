@@ -15,6 +15,11 @@ app.post('/autumn', function (req, res) {
   });
 });
 
+app.post('/update', function (req, res) {
+  activities[0].activity = req.body.updatedActivity;
+  res.send(activities);
+});
+
 app.listen(5050, function () {
   console.log('listening on localhost port 5050');
 });
