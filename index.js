@@ -20,6 +20,11 @@ app.post('/update', function (req, res) {
   res.send(activities);
 });
 
+app.post('/delete', function (req, res) {
+  activities.splice(req.body.number, 1);
+  res.send(activities);
+});
+
 app.listen(5050, function () {
   console.log('listening on localhost port 5050');
 });
